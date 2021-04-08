@@ -13,4 +13,4 @@ This repository contains six files:
 
 5. `SAM_dataset1.xlxs` contains of a table of responses to the short version of the Survey of Autobiographical Memory (Palombo et al. 2013) for all participants in Data Set 1.
 
-6. `SAM_dataset2.xlsx` contains of a table of responses to the short version of the Survey of Autobiographical Memory (Palombo et al. 2013) for all participants in Data Set 2.
+6. `SAM_dataset2.xlsx` contains of a table of responses to the short version of the Survey of Autobiographical Memory for all participants in Data Set 2.
