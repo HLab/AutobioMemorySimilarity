@@ -3,9 +3,9 @@ De-identified data associated with the manuscripted entitled "The Similarity Str
 
 This repository contains four files:
 
-1. `memories_dataset1.txt` contains Memory A and Memory B responses and "Relate" annotation responses for all participants in Data Set 1.
+1. `memories_dataset1.txt` contains Memory A and Memory B free responses and "Relate" annotation free responses for all participants in Data Set 1.
 
-2. `memories_dataset2.txt` contains Memory A and Memory B responses and "Relate" annotation responses for all participants in Data Set 2.
+2. `memories_dataset2.txt` contains Memory A and Memory B free responses and "Relate" annotation free responses for all participants in Data Set 2.
 
 3. `Dataset1.xlsx` contains Data Set 1 and has three worksheets:
     1. The `Annotation Responses` sheet contains a table of all raw annotation responses for all participants in Data Set 1, and other useful information.
