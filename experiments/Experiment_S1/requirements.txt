@@ -1,2 +1,0 @@
-PsiTurk
-psycopg2==2.7.7
