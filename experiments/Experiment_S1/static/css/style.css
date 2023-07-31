@@ -1,0 +1,309 @@
+.phase1 {
+border: 2px solid gray;
+padding: 15px;
+width: 550px;
+margin: 0 auto;
+display: none;
+}
+
+.phase2 {
+border: none;
+padding: 15px;
+width: 100%;
+display: none;
+margin: 0 auto;
+}
+
+.phase3 {
+border: 2px solid gray;
+padding: 15px;
+width: 550px;
+margin: 0 auto;
+display: none;
+}
+
+.phase4 {
+border: 2px solid gray;
+padding: 15px;
+width: 550px;
+margin: 0 auto;
+display: none;
+}
+
+.phase5 {
+border: 2px solid gray;
+padding: 15px;
+width: 550px;
+margin: 0 auto;
+display: none;
+}
+
+.catch {
+border: 2px solid gray;
+padding: 30px;
+width: 550px;
+margin: 0 auto;
+display: none;
+}
+
+#backButton {
+  display: none;
+}
+
+#ready {
+  display: block;
+}
+
+.rowContainer {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+flex-wrap: nowrap;
+text-align: left;
+padding-bottom: 20px;
+width: 100%;
+}
+
+.columnContainer {
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+flex-wrap: nowrap;
+text-align: left;
+margin: 2.5%;
+border: none;
+}
+
+.flexItem {
+border: none;
+padding: 15px 15px 30px 15px;
+width: 100%;
+display: none;
+}
+
+.responseBox {
+width: 400px;
+height: 200px;
+}
+
+.emotionRating {
+  display: none;
+}
+
+.wordRating {
+  display: none;
+}
+
+#memoryA {
+border-color: green;
+}
+
+#memoryB {
+border-color: blue;
+}
+
+#responseA {
+  color: green;
+}
+
+#responseB {
+  color: blue;
+}
+
+.charCount {
+font-size: 12pt;
+color: red;
+}
+
+body {
+font-family: Arial, Helvetica;
+font-size: 15pt;
+}
+
+#submitButton {
+display: none;
+width: 200px;
+height: 100px;
+margin: 0 auto;
+border: 2px solid blue;
+font-size: 20px;
+border-radius: 8px;
+}
+
+#submitButton:hover {
+background-color: blue;
+color: white;
+}
+
+#instructions {
+width: 600px;
+margin: 0 auto;
+text-align: center;
+margin-top: 20px;
+align: left;
+}
+
+#trial1_0 {
+width: 600px;
+margin: 0 auto;
+text-align: center;
+margin-top: 20px;
+align: left;
+border: none;
+}
+
+#end {
+width: 300px;
+margin: 0 auto;
+text-align: center;
+margin-top: 100px;
+display: none;
+}
+
+#startExperiment {
+color: rgb(200,200,200);
+text-decoration: none;
+}
+
+#startExperiment:hover {
+color: white;
+}
+
+#startExperimentButton {
+width: 200px;
+text-align: center;
+border: 4px outset gray;
+background: gray;
+padding: 5px;
+margin: 0 auto;
+align: left
+}
+
+#emotionSubmitA {
+  display: none;
+}
+
+#emotionSubmitB {
+  display: none;
+}
+
+.emotionError {
+  color: red;
+  display: none;
+}
+
+.emotionError2 {
+  color: red;
+  display: none;
+}
+
+.wordError {
+  color: red;
+  display: none;
+}
+
+.wordError2 {
+  color: red;
+  display: none;
+}
+
+.responseError {
+  color: red;
+  display: none;
+}
+
+#wordSubmitA {
+  display: none;
+}
+
+#wordSubmitB {
+  display: none;
+}
+
+#importanceA {
+  display: none;
+}
+
+#importanceB {
+  display: none;
+}
+
+.likert {
+  list-style:none;
+  width:100%;
+  margin:0;
+  padding:0 0 35px;
+  display:block;
+  border-bottom:2px solid #efefef;
+}
+
+.likert:last-of-type {border-bottom:0;}
+
+.likert:before {
+  content: '';
+  position:relative;
+  top:11px;
+  left:9.5%;
+  display:block;
+  background-color:#efefef;
+  height:4px;
+  width:78%;
+}
+
+.likert li {
+  display:inline-block;
+  width:19%;
+  text-align:center;
+  vertical-align: top;
+}
+
+.likert li input[type=radio] {
+  display:block;
+  position:relative;
+  top:0;
+  left:50%;
+  margin-left:-6px;
+}
+
+.likert li label {
+  width:100%;
+  font-size:14pt;
+  font-weight:normal;
+}
+
+#container-ad, #container-error, #container-exp, #container-consent, #container-instructions, #container-questionnaire {
+    position: absolute;
+    top: 0px; /* Header Height */
+    bottom: 0px; /* Footer Height */
+    left: 0px;
+    right: 0px;
+    padding: 100px;
+    padding-top: 5%;
+    border: 18px solid #f3f3f3;
+    background: white;
+}
+
+#container-consent, #container-exp {  /* override padding to fit long consent forms and exp display*/
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1%;
+}
+
+/* ad.html  - the ad that people view first */
+#adlogo {
+    float: right;
+    width: 140px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+/* consent.html - the consent <!--form-->*/
+#consent {
+  margin: 0 auto;
+  margin-top: 0;
+  width: 800px;
+  font-size: 100%;
+}
