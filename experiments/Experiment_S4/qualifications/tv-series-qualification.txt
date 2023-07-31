@@ -1,0 +1,3 @@
+Name: tv series qualification
+Description: This is a test to see how well you remember various TV series
+QualificationTypeId: 38CFB6RWNO739U0U6M8IN43TC5AVK1
