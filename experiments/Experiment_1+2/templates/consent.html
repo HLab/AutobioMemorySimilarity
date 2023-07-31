@@ -1,0 +1,100 @@
+{% extends 'layouts/layout.html' %}
+<!--
+  The consent.html displays the text of your IRB-approved
+  consent form.  Even if you are not required to provide
+  a consent form, it is helpful to use this form to
+  describe what people can do if an error comes up, etc...
+
+-->
+{% block head %}
+    {{ super() }}
+    <meta charset="utf-8" />
+    <title>Perception and Memory of Naturalistic Information Experiment - Informed Consent Form</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+    <link rel="icon" href="/static/images/university.png" />
+    <script type="text/javascript">
+        function onexit() {
+          self.close(); // no harm, no foul here
+        }
+    </script>
+		<style>
+			@media print {
+				body * {
+					visibility: hidden;
+				}
+				.legal, .legal * {
+					visibility: visible;
+				}
+				.legal {
+					position: absolute;
+					left: 0;
+					top: 0;
+					overflow:visible;
+				}
+			}
+		</style>
+    {% endblock %}
+{% block body %}
+        <div id="container-consent">
+            <div id="consent">
+              <h1>We need your consent to proceed</h1>
+              <hr>
+              <div class="legal well">
+                  <p> We are pleased to invite you to participate in the research study outlined below. Your participation is entirely voluntary and you can withdraw at any time without penalty. </p>
+
+                  <p> <b>Study Title: </b> Perception and Memory of Naturalistic Information </p> <!-- Perception and memory of naturalistic information sequences -->
+                  <p> <b>Investigator: </b> Dr. Christopher Honey </p>
+                  <p> <b>Purpose of Research Study:</b> The purpose of this study is to examine how memory and perceptual functions interact in the brain.  In particular, we are interested how the brain enables us to perceive streams of information over time. </p>
+                  <p> <b>Procedures for the Study: </b> </p>
+                  <p> You will participate in a computerized task. You will see a series of images or short movies on the screen, or may hear or see a series of sounds or words. Your task is to carefully examine each image or movie, or to carefully listen to each sequence of sounds, or to carefully read words on a screen, so that you can report what you saw or heard.</p>
+                  <p>Sometimes we will ask you to directly report what you saw or heard, for example by providing a yes/no response (&#34;Was the image moving?&#34; or &#34;Did you hear the same sound twice in a row?&#34;). In other cases, we may ask you to make a judgment about images (&#34;Which images belong together?&#34;) or about other features of the stimuli (&#34;Which sound was louder?&#34;).</p>
+                  <p>After completing the main experiment, we will ask you to fill out a brief questionnaire that asks about some personal information (for example, left/right handedness) and gives you an opportunity to comment on your experience performing the task. </p>
+                  <!-- <p>The experiment involves making several judgments in response to visual stimuli</p> <!-- The experiment involves detecting subtle movements in presented images. -->
+                  <p> <b>Time Commitment: </b> You will be participating in one session, which will take 30-40 minutes. </p>
+
+                  <p> <b>Voluntariness and Right to Withdraw: </b> </p>
+                  <p> Your participation in this study is entirely voluntary: you choose whether to participate. If you decide not to participate, there are no penalties, and you will not lose any benefits to which you would otherwise be entitled. If you choose to participate in the study, you can stop your participation at any time, without any penalty or loss of benefits. If you want to withdraw from the study, please simply inform the experimenter. </p>
+                  <p> <b>Risks/Discomforts: </b> </p>
+                  <p> There are no known physical or psychological risks associated with your participation in this study, other than the possibility of fatigue or boredom. </p>
+
+                  <p> <b>Benefits: </b> </p>
+                  <p> There are no direct benefits to you for participating in this research study. This study may benefit society if the results improve our understanding of how people process streams of information. </p>
+                  <p> <b>Confidentiality:</b> </p>
+                  <p> Study records do not identify you. The experimental data and questionnaire responses collected during this task visit will be identified with a code number, and your real name is not available to the experimental team.  De-identified and anonymized data (e.g. response times, key presses, and questionnaire responses) may be made freely available to the scientific community to encourage scientific openness and reproducibility.   If you have any concerns about sharing of anonymized data, please do not participate.</p>
+              <p> <b>Compensation: </b> You will receive $5.83 for participation. </p>
+
+                  <p> <b>Questions or Concerns:</b> </p>
+                  <p>You can ask questions about this research study by contacting the researcher(s) at honeylabonline@gmail.com.<br>
+If you have questions about your rights as a research participant or feel that you have not been treated fairly, please call the Homewood Institutional Review Board at Johns Hopkins University at (410) 516-6580. </p>
+                  <p> <b>Digital Signature:</b> </p>
+                  <p> What it means to check &#34;I Agree&#34; below:<br>
+&#34;I Agree&#34; means that you understand the information in this consent form.<br>
+&#34;I Agree&#34; means that you agree to participate in the study.<br>
+By clicking &#34;I Agree&#34; you will <b>not</b> waive any legal rights you otherwise would have as a participant in a research study.</p>
+                  <p>If you agree to the above statement and would like to continue with this study, please click <b>&#34;I Agree&#34;</b>. If you would not like to continue, please click <b>&#34;I Disagree&#34;</b>. </p>
+
+                  <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
+                  <span class="glyphicon glyphicon-print"></span> Print a copy of this form
+                  </button>
+              </div>
+
+              <hr>
+              <h4>Do you understand and agree to these terms?</h4>
+              <br>
+
+              <center>
+                  <button type="button" class="btn btn-primary btn-lg" onClick="window.location='/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}'">
+                  <span class="glyphicon glyphicon-ok"></span> I Agree
+                  </button>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <button type="button" class="btn btn-danger btn-lg" onClick="onexit()">
+                  <span class="glyphicon glyphicon-ban-circle"></span> I Disagree, I do not want to do this HIT
+                  </button>
+              </center>
+
+            </div>
+        </div>
+{% endblock %}
