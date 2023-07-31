@@ -1,0 +1,95 @@
+<QuestionForm xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2017-11-06/QuestionForm.xsd">
+  <Overview>
+    <Title>Qualification Test</Title>
+    <Text>This test assesses if you have ever deeply followed various TV series. After taking this qualification test, you may be redirected away from our HIT. If this occurs, please search "Honey Lab Memory Experiment" to participate in our experiment. Please note that if you have taken some of our experiments before, you may be blocked from this HIT as we use some of the same questions. This will not prevent you from accepting unrelated HITs from us in the future.
+	</Text>
+  </Overview>
+  <Question>
+    <QuestionIdentifier>question1</QuestionIdentifier>
+    <IsRequired>true</IsRequired>
+    <QuestionContent>
+      <Text>Have you ever been a big fan of any of the following TV series? Choose one below, or choose "None" if you have never been a big fan of any of these.</Text>
+    </QuestionContent>
+    <AnswerSpecification>
+      <SelectionAnswer>
+        <StyleSuggestion>radiobutton</StyleSuggestion>
+        <Selections>
+          <Selection>
+            <SelectionIdentifier>1</SelectionIdentifier>
+            <Text>Arrested Development</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>2</SelectionIdentifier>
+            <Text>Breaking Bad</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>3</SelectionIdentifier>
+            <Text>Friday Night Lights</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>4</SelectionIdentifier>
+            <Text>Game of Thrones</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>5</SelectionIdentifier>
+            <Text>Law and Order: SVU</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>6</SelectionIdentifier>
+            <Text>Parks and Recreation</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>7</SelectionIdentifier>
+            <Text>The Simpsons</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>8</SelectionIdentifier>
+            <Text>Star Trek: The Next Generation</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>9</SelectionIdentifier>
+            <Text>None</Text>
+          </Selection>
+        </Selections>
+      </SelectionAnswer>
+    </AnswerSpecification>
+  </Question>
+  <Question>
+    <QuestionIdentifier>question2</QuestionIdentifier>
+    <IsRequired>true</IsRequired>
+    <QuestionContent>
+      <Text>For the TV series you selected, how well do you remember the series? If you selected "None", then select "N/A" for the answer to this question.</Text>
+    </QuestionContent>
+    <AnswerSpecification>
+      <SelectionAnswer>
+        <StyleSuggestion>radiobutton</StyleSuggestion>
+        <Selections>
+          <Selection>
+            <SelectionIdentifier>10</SelectionIdentifier>
+            <Text>I remember some vague imagery, and some names and faces of the main characters, but nothing more.</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>11</SelectionIdentifier>
+            <Text>I remember the main characters, and I vaguely remember the themes/gists of some episodes.</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>12</SelectionIdentifier>
+            <Text>I remember the main characters, and I remember most of the major events that occurred in some detail.</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>13</SelectionIdentifier>
+            <Text>I remember the main characters, and I remember most of the major events that occurred in much detail.</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>14</SelectionIdentifier>
+            <Text>My memory of the characters and events is superb, probably better than the average person's memory for this show.</Text>
+          </Selection>
+          <Selection>
+            <SelectionIdentifier>15</SelectionIdentifier>
+            <Text>N/A.</Text>
+          </Selection>
+        </Selections>
+      </SelectionAnswer>
+    </AnswerSpecification>
+  </Question>
+</QuestionForm>
